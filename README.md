@@ -228,8 +228,8 @@ a {
 
 ## Notes
 
-- Specify the intrinsic size (`height` and `width` attributes) of media elements in the HTML where possible to prevent layout shifts, improve performance, and enhance site experience.
-  - Before the media is downloaded and painted to the screen, the browser calculates the media aspect ratio based on the provided `height` and `width` attributes to reserve an appropriate amount of space in the layout.
+- Specify the intrinsic size (`height` and `width` attributes) of media elements in the HTML where possible to prevent layout shifts, reduce reflows, and increase rendering speed.
+  - Before the media is downloaded and painted to the screen, the browser calculates the media's aspect ratio based on the provided `height` and `width` attributes to reserve an appropriate amount of space in the layout.
 - If using a framework and a root [stacking context](https://www.joshwcomeau.com/css/stacking-contexts/), change the root id selector name to match the framework.
   - For example, the top-level HTML element for create-react-app is `<div id="root"></div>` so the correct selector is `#root`.
 
