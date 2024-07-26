@@ -153,6 +153,7 @@ a {
 
 /*  */
 
+/*
 :root {
   color-scheme: light dark;
 }
@@ -182,3 +183,9 @@ a {
     --color-status-green: hsl(155, 57%, 45%);
   }
 }
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+*/
