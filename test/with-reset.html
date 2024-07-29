@@ -20,6 +20,10 @@
     <h5>This is a h5 heading</h5>
     <h6>This is a h6 heading</h6>
     <br />
+    <h2>
+      This is a really really really really really really really long h2 heading
+    </h2>
+    <br />
     <p>
       This is a p paragraph. Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Autem, quos exercitationem veritatis debitis vitae impedit
@@ -30,7 +34,7 @@
       dolorum soluta veritatis voluptatem!
     </p>
     <br />
-    <a href="">this is an a anchor</a>
+    <a href="/test/with-reset.html">This is an a anchor.</a>
     <br />
     <br />
     <code>code: console.log("hello world!");</code>
@@ -77,10 +81,10 @@ pre:
     <input type="radio" />
     <input
       type="image"
-      src="/test/res/input-image.jpg"
-      alt="input-image"
-      width="50"
-      height="50"
+      src="/test/res/door.jpg"
+      alt="door input image"
+      width="40"
+      height="30"
     />
     <br />
     <br />
@@ -99,7 +103,52 @@ pre:
     <textarea>textarea</textarea>
     <textarea disabled>disabled textarea</textarea>
     <hr />
-    <img src="/test/res/scenery.jpg" alt="scenery" width="" height="" />
+    <p>canvas:</p>
+    <canvas width="300" height="300" style="border: 1px solid #000000">
+      <p>This is a canvas that is empty.</p>
+    </canvas>
+    <br />
+    <p>img:</p>
+    <img src="/test/res/sky.jpg" alt="sky" width="800" height="533" />
     <img src="" alt="img alt text of image that failed to load" />
+    <br />
+    <p>picture:</p>
+    <picture>
+      <source
+        srcset="/test/res/apple.jpg"
+        width="640"
+        height="409"
+        media="(min-width: 600px)"
+      />
+      <source
+        srcset="/test/res/peach.jpg"
+        width="540"
+        height="446"
+        media="(min-width: 500px)"
+      />
+      <img src="/test/res/orange.jpg" alt="fruit" width="440" height="293" />
+    </picture>
+    <br />
+    <p>svg:</p>
+    <svg
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="100" cy="100" r="100" fill="#000000" />
+    </svg>
+    <br />
+    <p>video:</p>
+    <video controls width="426" height="240">
+      <source src="/test/res/cat.mp4" type="video/mp4" />
+      <p>This is a video of a cat.</p>
+    </video>
+    <br />
+    <p>audio:</p>
+    <audio controls>
+      <source src="/test/res/lofi.mp3" type="audio/mpeg" />
+      <p>This is an audio of lofi music.</p>
+    </audio>
   </body>
 </html>

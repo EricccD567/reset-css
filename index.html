@@ -12,10 +12,7 @@
     <style>
       body {
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: space-evenly;
+        flex-direction: column;
       }
 
       button {
@@ -52,20 +49,44 @@
         box-shadow: none;
         transform: translateY(0);
       }
+
+      #github-mark {
+        margin: 35px auto 0;
+      }
+
+      #buttons {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+      }
     </style>
   </head>
   <body>
-    <button
-      type="button"
-      onclick="window.location.href='/test/without-reset.html'"
-    >
-      without reset
-    </button>
-    <button
-      type="button"
-      onclick="window.location.href='/test/with-reset.html'"
-    >
-      with reset
-    </button>
+    <a href="https://github.com/EricccD567/reset-css" target="_blank">
+      <img
+        id="github-mark"
+        src="/github-mark/github-mark-light.svg"
+        alt="a github mark that links to the reset-css repo"
+        width="98"
+        height="96"
+      />
+    </a>
+    <div id="buttons">
+      <button
+        type="button"
+        onclick="window.location.href='/test/without-reset.html'"
+      >
+        without reset
+      </button>
+      <button
+        type="button"
+        onclick="window.location.href='/test/with-reset.html'"
+      >
+        with reset
+      </button>
+    </div>
   </body>
 </html>
