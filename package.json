@@ -1,9 +1,18 @@
 {
+  "homepage": "https://ericccd567.github.io/reset-css",
   "name": "reset-css",
   "version": "1.0.0",
   "description": "An opinionated CSS reset",
   "license": "MIT",
   "dependencies": {
-    "modern-normalize": "^2.0.0"
+    "modern-normalize": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "./build.sh"
   }
 }
