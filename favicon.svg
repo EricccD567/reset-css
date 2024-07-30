@@ -1,0 +1,45 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      #bg {
+        fill: #82A6ED
+      }
+      #mg {
+        fill: #BAD3F2
+      }
+      #fg3 {
+        fill: #FFCA35
+      }
+      #fg2 {
+        fill: #FFFC35
+      }
+      #fg1 {
+        fill: #012474
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      #bg {
+        fill: #12367D
+      }
+      #mg {
+        fill: #0D2645
+      }
+      #fg3 {
+        fill: white
+      }
+      #fg2 {
+        fill: #FFFCD2
+      }
+      #fg1 {
+        fill: #8BADFE
+      }
+    }
+  </style>
+  <g id="rise">
+    <circle id="bg" cx="110" cy="110" r="110"/>
+    <circle id="mg" cx="110" cy="110" r="100"/>
+    <circle id="fg3" cx="110" cy="110" r="50"/>
+    <circle id="fg2" cx="110" cy="110" r="40"/>
+    <path id="fg1" d="M210 110C210 123.132 207.413 136.136 202.388 148.268C197.362 160.401 189.997 171.425 180.711 180.711C171.425 189.997 160.401 197.362 148.268 202.388C136.136 207.413 123.132 210 110 210C96.8678 210 83.8642 207.413 71.7317 202.388C59.5991 197.362 48.5752 189.997 39.2893 180.711C30.0035 171.425 22.6375 160.401 17.612 148.268C12.5866 136.136 10 123.132 10 110L110 110H210Z"/>
+  </g>
+</svg>

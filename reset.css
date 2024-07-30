@@ -1,0 +1,191 @@
+/* global reset */
+
+/*
+ * normalize browsers' default style
+ */
+@import url('./modern-normalize/modern-normalize.css');
+
+/*
+ * use more intuitive box sizing
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+ * remove default margin and padding
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * prevent text size inflation in mobile browsers
+ */
+html {
+  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+/*
+ * use system font stack for basic text
+ * set accessible line height
+ * set min body height
+ */
+body {
+  font-family: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.5;
+  min-height: 100svh;
+}
+
+/*
+ * use system font stack for programming and technical text
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+    'DejaVu Sans Mono', monospace;
+}
+
+/*
+ * remove default typographic styling for interactive elements
+ * set shorter line height for interactive elements
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  line-height: 1.15;
+}
+
+/*
+ * improve responsiveness for media elements
+ */
+canvas,
+img,
+/* picture, */
+svg,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  display: block;
+  max-width: 100%;
+}
+
+/* optional reset */
+
+/*
+ * distinguish img alt text if image fails to load
+ */
+img {
+  font-style: italic;
+}
+
+/*
+ * prevent text overflow for headings and paragraphs
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+/*
+ * improve text wrapping for headings by balancing number of characters on each line
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+ * use auto hyphenation for paragraphs
+ * improve text wrapping for paragraphs by prioritizing layout and minimizing orphans
+ */
+@supports (text-wrap: pretty) {
+  p {
+    hyphens: auto;
+    text-wrap: pretty;
+  }
+}
+
+/*
+ * improve readability for paragraphs
+ */
+p {
+  max-width: 75ch;
+}
+
+/*
+ * increase subtlety for anchors
+ */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+ * create root stacking context for framework
+ */
+#root {
+  isolation: isolate;
+}
+
+/*  */
+
+/*
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: hsl(219, 92%, 5%);
+    --color-background: hsl(228, 100%, 99%);
+    --color-primary: hsl(222, 98%, 23%);
+    --color-secondary: hsl(213, 68%, 84%);
+    --color-accent: hsl(220, 75%, 72%);
+    --color-status-red: hsl(4, 91%, 69%);
+    --color-status-yellow: hsl(47, 97%, 45%);
+    --color-status-green: hsl(155, 57%, 55%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: hsl(219, 92%, 95%);
+    --color-background: hsl(228, 100%, 1%);
+    --color-primary: hsl(222, 98%, 77%);
+    --color-secondary: hsl(213, 68%, 16%);
+    --color-accent: hsl(220, 75%, 28%);
+    --color-status-red: hsl(4, 91%, 31%);
+    --color-status-yellow: hsl(47, 97%, 55%);
+    --color-status-green: hsl(155, 57%, 45%);
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+*/
