@@ -20,7 +20,7 @@ echo "Building into production directory at ./${PROD_DIR}"
 echo '...'
 
 # install or update dependencies
-npm update
+npm update --omit='dev'
 
 # remove production directory if it exists
 clean_prod_dir
