@@ -109,6 +109,8 @@ a {
 #root {
   isolation: isolate;
 }
+
+/*  */
 ```
 
 ### Including modern-normalize
@@ -124,7 +126,7 @@ Copy to the start of a CSS file:
 ```css
 /* global reset */
 
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('node_modules/modern-normalize/modern-normalize.css');
 
 *,
 *::before,
@@ -224,10 +226,13 @@ a {
 #root {
   isolation: isolate;
 }
+
+/*  */
 ```
 
 ## Notes
 
+- Change the file path for `@import url('node_modules/modern-normalize/modern-normalize.css');` if required.
 - Specify the intrinsic size (`height` and `width` attributes) of media elements in the HTML where possible to prevent layout shifts, reduce reflows, and increase rendering speed.
   - Before the media is downloaded and painted to the screen, the browser calculates the media's aspect ratio based on the provided `height` and `width` attributes to reserve an appropriate amount of space in the layout.
 - If using a framework and a root [stacking context](https://www.joshwcomeau.com/css/stacking-contexts/), change the root id selector name to match the framework.

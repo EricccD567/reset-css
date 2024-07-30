@@ -3,7 +3,7 @@
 /*
  * normalize browsers' default style
  */
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('./node_modules/modern-normalize/modern-normalize.css');
 
 /*
  * use more intuitive box sizing
