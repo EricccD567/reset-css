@@ -4,6 +4,6 @@
   "description": "An opinionated CSS reset",
   "license": "MIT",
   "dependencies": {
-    "modern-normalize": "^2.0.0"
+    "modern-normalize": "latest"
   }
 }
