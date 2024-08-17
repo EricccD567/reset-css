@@ -19,8 +19,8 @@ clean_prod_dir () {
 echo "Building into production directory at ./${PROD_DIR}"
 echo '...'
 
-# install or update dependencies
-npm update --omit='dev'
+# install or update modern-normalize dependency
+npm update modern-normalize
 
 # remove production directory if it exists
 clean_prod_dir
