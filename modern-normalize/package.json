@@ -1,6 +1,6 @@
 {
 	"name": "modern-normalize",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Normalize browsers' default style",
 	"license": "MIT",
 	"repository": "sindresorhus/modern-normalize",
@@ -12,7 +12,7 @@
 	},
 	"main": "modern-normalize.css",
 	"style": "modern-normalize.css",
-	"sideEffects": false,
+	"sideEffects": true,
 	"engines": {
 		"node": ">=6"
 	},
